@@ -11,7 +11,7 @@
 #
 
 # Modify default IP
-#sed -i 's/192.168.1.1/192.168.1.3/g' package/base-files/files/bin/config_generate
+#sed -i 's/192.168.1.1/192.168.1.2/g' package/base-files/files/bin/config_generate
 
 # Hostname
 sed -i 's/OpenWrt/nzksm/g' package/base-files/files/bin/config_generate
@@ -34,6 +34,7 @@ git clone -b main --depth=1 https://github.com/fw876/helloworld.git package/hell
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages.git package/openwrt-passwall-packages
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2.git package/openwrt-passwall2
 git clone --depth=1 https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/luci-theme-opentomcat
+git clone -b dev --single-branch --depth=1 https://github.com/vernesong/OpenClash.git package/OpenClash
 #rm -rf package/helloworld/hysteria
 #rm -rf package/helloworld/v2ray-core
 #rm -rf package/helloworld/v2ray-plugin
