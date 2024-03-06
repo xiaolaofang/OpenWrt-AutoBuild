@@ -33,7 +33,7 @@ sed -i 's#luci-theme-bootstrap#luci-theme-opentomcat#g' feeds/luci/collections/l
 sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
 
 # Add additional packages
-# function merge_package() {
+function merge_package() {
     # 参数1是分支名,参数2是库地址,参数3是所有文件下载到指定路径。
     # 同一个仓库下载多个文件夹直接在后面跟文件名或路径，空格分开。
     if [[ $# -lt 3 ]]; then
