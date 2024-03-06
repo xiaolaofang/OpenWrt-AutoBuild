@@ -44,6 +44,7 @@ git clone -b dev --single-branch --depth=1 https://github.com/vernesong/OpenClas
 #git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
 # git clone -b master --single-branch --depth=1 https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
 git clone -b master --single-branch --depth=1 https://github.com/kenzok8/small.git package/small
+rm -rf package/small/luci-app-bypass
 
 # dockerd去版本验证
 #sed -i 's/^\s*$[(]call\sEnsureVendoredVersion/#&/' feeds/packages/utils/dockerd/Makefile
