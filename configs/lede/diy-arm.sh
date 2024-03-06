@@ -56,8 +56,9 @@ function merge_package() {
     done
     cd "$rootdir"
 }
-merge_package master https://github.com/kenzok8/openwrt-packages package/fang lua-maxminddb
+merge_package master https://github.com/kenzok8/openwrt-packages package/kkk lua-maxminddb
 merge_package master https://github.com/fw876/helloworld package/fff v2ray-plugin
+merge_package main https://github.com/xiaorouji/openwrt-passwall-packages package/ttt sing-box
 # git clone -b main --single-branch --depth=1 https://github.com/dfbucy090/helloworld.git package/helloworld
 # git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
 # git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages.git package/openwrt-passwall-packages
@@ -70,6 +71,7 @@ git clone -b dev --single-branch --depth=1 https://github.com/vernesong/OpenClas
 # git clone -b master --single-branch --depth=1 https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
 git clone -b master --single-branch --depth=1 https://github.com/kenzok8/small.git package/small
 rm -rf package/small/v2ray-plugin
+rm -rf package/small/sing-box
 
 # dockerd去版本验证
 #sed -i 's/^\s*$[(]call\sEnsureVendoredVersion/#&/' feeds/packages/utils/dockerd/Makefile
