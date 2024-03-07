@@ -57,7 +57,7 @@ function merge_package() {
     cd "$rootdir"
 }
 merge_package master https://github.com/kenzok8/openwrt-packages package/kkk lua-maxminddb
-# merge_package master https://github.com/fw876/helloworld package/fff chinadns-ng
+merge_package master https://github.com/fw876/helloworld package/fff chinadns-ng
 merge_package main https://github.com/xiaorouji/openwrt-passwall-packages package/ttt sing-box
 # git clone -b main --single-branch --depth=1 https://github.com/dfbucy090/helloworld.git package/helloworld
 # git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
