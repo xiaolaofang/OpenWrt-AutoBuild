@@ -73,6 +73,9 @@ git clone -b master --single-branch --depth=1 https://github.com/kenzok8/small.g
 # rm -rf package/small/v2ray-plugin
 rm -rf package/small/sing-box
 
+# Update Go Version
+rm -rf feeds/packages/lang/golang && git clone -b 22.x https://github.com/sbwml/packages_lang_golang feeds/packages/lang/golang
+
 
 # dockerd去版本验证
 #sed -i 's/^\s*$[(]call\sEnsureVendoredVersion/#&/' feeds/packages/utils/dockerd/Makefile
