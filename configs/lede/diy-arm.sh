@@ -73,6 +73,7 @@ git clone -b master --single-branch --depth=1 https://github.com/kenzok8/small.g
 # rm -rf package/small/v2ray-plugin
 # rm -rf package/small/sing-box
 rm -rf package/small/luci-app-bypass
+rm -rf package/small/mosdns
 
 # dockerd去版本验证
 #sed -i 's/^\s*$[(]call\sEnsureVendoredVersion/#&/' feeds/packages/utils/dockerd/Makefile
