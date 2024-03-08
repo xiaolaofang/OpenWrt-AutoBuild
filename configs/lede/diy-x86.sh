@@ -71,6 +71,14 @@ rm -rf package/small/v2ray-plugin
 rm -rf package/small/sing-box
 rm -rf package/small/chinadns-ng
 
+# Update Go Version
+# rm -rf feeds/packages/lang/golang && git clone -b 22.x https://github.com/sbwml/packages_lang_golang feeds/packages/lang/golang
+./scripts/feeds clean
+./scripts/feeds update -a
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
+./scripts/feeds install -a
+
 # dockerd去版本验证
 #sed -i 's/^\s*$[(]call\sEnsureVendoredVersion/#&/' feeds/packages/utils/dockerd/Makefile
 
