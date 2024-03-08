@@ -74,8 +74,6 @@ rm -rf package/small/sing-box
 # rm -rf feeds/packages/lang/golang && git clone -b 22.x https://github.com/sbwml/packages_lang_golang feeds/packages/lang/golang
 ./scripts/feeds clean
 ./scripts/feeds update -a
-rm -rf package/feeds/luci/luci-app-vsftpd
-rm -rf package/lean/vsftpd-alt
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 ./scripts/feeds install -a
