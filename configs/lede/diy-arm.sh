@@ -57,7 +57,7 @@ function merge_package() {
     cd "$rootdir"
 }
 merge_package master https://github.com/kenzok8/openwrt-packages package/kkk lua-maxminddb
-merge_package master https://github.com/fw876/helloworld package/fff chinadns-ng
+# merge_package master https://github.com/fw876/helloworld package/fff v2ray-plugin
 merge_package main https://github.com/xiaorouji/openwrt-passwall-packages package/ttt sing-box
 # git clone -b main --single-branch --depth=1 https://github.com/dfbucy090/helloworld.git package/helloworld
 # git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
@@ -72,7 +72,6 @@ git clone -b dev --single-branch --depth=1 https://github.com/vernesong/OpenClas
 git clone -b master --single-branch --depth=1 https://github.com/kenzok8/small.git package/small
 # rm -rf package/small/v2ray-plugin
 rm -rf package/small/sing-box
-rm -rf package/small/chinadns-ng
 
 # Update Go Version
 # rm -rf feeds/packages/lang/golang && git clone -b 22.x https://github.com/sbwml/packages_lang_golang feeds/packages/lang/golang
