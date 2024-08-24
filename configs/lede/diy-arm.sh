@@ -74,7 +74,7 @@ git clone -b dev --single-branch --depth=1 https://github.com/vernesong/OpenClas
 #rm -rf package/small/sing-box
 
 # Delete mosdns
-rm -rf feeds/packages/net/mosdns
+#rm -rf feeds/packages/net/mosdns
 
 # Update Go Version
 #rm -rf feeds/packages/lang/golang && git clone -b 22.x https://github.com/sbwml/packages_lang_golang feeds/packages/lang/golang
