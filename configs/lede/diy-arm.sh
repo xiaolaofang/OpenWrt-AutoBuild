@@ -72,6 +72,7 @@ git clone -b dev --single-branch --depth=1 https://github.com/vernesong/OpenClas
 git clone -b master --single-branch --depth=1 https://github.com/kenzok8/small.git package/small
 # rm -rf package/small/v2ray-plugin
 rm -rf package/small/sing-box
+rm -rf package/small/mosdns
 
 # Delete mosdns
 rm -rf feeds/packages/net/mosdns
