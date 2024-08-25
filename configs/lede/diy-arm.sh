@@ -56,7 +56,7 @@ function merge_package() {
     done
     cd "$rootdir"
 }
-merge_package master https://github.com/kenzok8/openwrt-packages package/kkk lua-maxminddb
+# merge_package master https://github.com/kenzok8/openwrt-packages package/kkk lua-maxminddb
 # merge_package master https://github.com/fw876/helloworld package/fff v2ray-plugin
 merge_package main https://github.com/xiaorouji/openwrt-passwall-packages package/ttt sing-box
 # git clone -b main --single-branch --depth=1 https://github.com/dfbucy090/helloworld.git package/helloworld
@@ -68,7 +68,7 @@ git clone --depth=1 https://github.com/Leo-Jo-My/luci-theme-opentomcat.git packa
 git clone -b dev --single-branch --depth=1 https://github.com/vernesong/OpenClash.git package/OpenClash
 #git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 #git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
-# git clone -b master --single-branch --depth=1 https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
+git clone -b master --single-branch --depth=1 https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
 git clone -b master --single-branch --depth=1 https://github.com/kenzok8/small.git package/small
 # rm -rf package/small/v2ray-plugin
 rm -rf package/small/sing-box
