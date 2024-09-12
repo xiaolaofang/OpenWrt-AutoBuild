@@ -56,7 +56,7 @@ function merge_package() {
     done
     cd "$rootdir"
 }
-# merge_package master https://github.com/kenzok8/openwrt-packages package/kkk lua-maxminddb
+merge_package master https://github.com/kenzok8/openwrt-packages package/kkk lua-maxminddb
 # merge_package master https://github.com/fw876/helloworld package/fff v2ray-plugin
 # merge_package main https://github.com/xiaorouji/openwrt-passwall-packages package/ttt sing-box
 # git clone -b main --single-branch --depth=1 https://github.com/dfbucy090/helloworld.git package/helloworld
@@ -72,7 +72,7 @@ function merge_package() {
 #git clone -b master --single-branch --depth=1 https://github.com/kenzok8/small.git package/small
 # rm -rf package/small/v2ray-plugin
 #rm -rf package/small/sing-box
-merge_package master https://github.com/fw876/helloworld package/fff mosdns shadow-tls v2raya redsocks2 luci-app-ssr-plus lua-neturl
+merge_package master https://github.com/fw876/helloworld package/fff mosdns luci-app-ssr-plus
 # git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages.git package/openwrt-passwall-packages
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2.git package/openwrt-passwall2
