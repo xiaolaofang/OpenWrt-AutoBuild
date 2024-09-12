@@ -73,7 +73,7 @@ function merge_package() {
 # rm -rf package/small/v2ray-plugin
 #rm -rf package/small/sing-box
 merge_package master https://github.com/fw876/helloworld package/fff mosdns shadow-tls v2raya redsocks2 luci-app-ssr-plus lua-neturl
-git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
+# git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages.git package/openwrt-passwall-packages
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2.git package/openwrt-passwall2
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
