@@ -56,7 +56,7 @@ function merge_package() {
     done
     cd "$rootdir"
 }
-merge_package master https://github.com/kenzok8/openwrt-packages package/kkk lua-maxminddb
+# merge_package master https://github.com/kenzok8/openwrt-packages package/kkk lua-maxminddb
 # merge_package master https://github.com/fw876/helloworld package/fff v2ray-plugin
 # merge_package main https://github.com/xiaorouji/openwrt-passwall-packages package/ttt sing-box
 # git clone -b main --single-branch --depth=1 https://github.com/dfbucy090/helloworld.git package/helloworld
@@ -64,8 +64,8 @@ merge_package master https://github.com/kenzok8/openwrt-packages package/kkk lua
 # git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages.git package/openwrt-passwall-packages
 # git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2.git package/openwrt-passwall2
 # git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
-git clone --depth=1 https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/luci-theme-opentomcat
-git clone -b master --single-branch --depth=1 https://github.com/vernesong/OpenClash.git package/OpenClash
+# git clone --depth=1 https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/luci-theme-opentomcat
+# git clone -b master --single-branch --depth=1 https://github.com/vernesong/OpenClash.git package/OpenClash
 #git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 #git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
 # git clone -b master --single-branch --depth=1 https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
@@ -73,20 +73,18 @@ git clone -b master --single-branch --depth=1 https://github.com/vernesong/OpenC
 # rm -rf package/small/v2ray-plugin
 #rm -rf package/small/sing-box
 
-# 移除 openwrt feeds 自带的核心包
-rm -rf feeds/packages/net/{xray-core,v2ray-core,v2ray-geodata,sing-box}
-git clone https://github.com/sbwml/openwrt_helloworld package/helloworld
-
-# 更新 golang 1.22 版本
-rm -rf feeds/packages/lang/golang
-git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
+git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages.git package/openwrt-passwall-packages
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2.git package/openwrt-passwall2
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
+git clone --depth=1 https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/luci-theme-opentomcat
 
 # Delete mosdns
 #rm -rf feeds/packages/net/mosdns
 
 
 # Update Go Version
-#rm -rf feeds/packages/lang/golang && git clone -b 22.x https://github.com/sbwml/packages_lang_golang feeds/packages/lang/golang
+rm -rf feeds/packages/lang/golang && git clone -b 22.x https://github.com/sbwml/packages_lang_golang feeds/packages/lang/golang
 
 # dockerd去版本验证
 #sed -i 's/^\s*$[(]call\sEnsureVendoredVersion/#&/' feeds/packages/utils/dockerd/Makefile
