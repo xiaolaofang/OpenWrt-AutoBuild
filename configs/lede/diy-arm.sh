@@ -72,7 +72,7 @@ merge_package master https://github.com/kenzok8/openwrt-packages package/kkk lua
 #git clone -b master --single-branch --depth=1 https://github.com/kenzok8/small.git package/small
 # rm -rf package/small/v2ray-plugin
 #rm -rf package/small/sing-box
-merge_package master https://github.com/fw876/helloworld package/fff mosdns luci-app-ssr-plus
+merge_package master https://github.com/fw876/helloworld package/fff luci-app-ssr-plus
 # git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages.git package/openwrt-passwall-packages
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2.git package/openwrt-passwall2
@@ -81,7 +81,7 @@ git clone --depth=1 https://github.com/Leo-Jo-My/luci-theme-opentomcat.git packa
 git clone -b master --single-branch --depth=1 https://github.com/vernesong/OpenClash.git package/OpenClash
 
 # Delete mosdns
-#rm -rf feeds/packages/net/mosdns
+rm -rf feeds/packages/net/mosdns
 
 
 # Update Go Version
