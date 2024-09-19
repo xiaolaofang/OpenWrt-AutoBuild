@@ -34,7 +34,6 @@ sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/theme
 
 # Add additional packages
 git clone --depth=1 https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/luci-theme-opentomcat
-git clone -b dev --single-branch --depth=1 https://github.com/vernesong/OpenClash.git package/OpenClash
 git clone -b master --single-branch --depth=1 https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
 git clone -b master --single-branch --depth=1 https://github.com/kenzok8/small.git package/small
 rm -rf feeds/luci/applications/luci-app-mosdns
