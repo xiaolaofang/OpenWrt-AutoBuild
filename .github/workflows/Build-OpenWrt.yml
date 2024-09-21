@@ -701,7 +701,7 @@ jobs:
 
   delete:
     runs-on: ubuntu-latest
-    needs: [ARMv8, x86, x86-docker]
+    needs: [ARMv8, x86, x86-docker,x86-official]
     
     steps:
 
