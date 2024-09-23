@@ -31,9 +31,6 @@ sed -i 's/OpenWrt/fang/g' package/base-files/files/bin/config_generate
 #rm -rf feeds/packages/net/xray-core
 #rm -rf feeds/packages/net/sing-box
 git clone --depth=1 https://github.com/yunxi993/extra.git package/extra
-rm -rf package/openwrt-packages/luci-app-dockerman
-git clone --depth=1 https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
-
 sed -i "s/enabled '0'/enabled '1'/g" feeds/packages/utils/irqbalance/files/irqbalance.config
 
 # dockerd去版本验证
