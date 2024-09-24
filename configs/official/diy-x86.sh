@@ -32,6 +32,9 @@ sed -i 's/OpenWrt/fang/g' package/base-files/files/bin/config_generate
 #rm -rf feeds/packages/net/sing-box
 git clone -b master --single-branch --depth=1 https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
 git clone -b master --single-branch --depth=1 https://github.com/kenzok8/small.git package/small
+rm -rf feeds/packages/utils/v2dat
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 git clone --depth=1 https://github.com/yunxi993/extra.git package/extra
 sed -i "s/enabled '0'/enabled '1'/g" feeds/packages/utils/irqbalance/files/irqbalance.config
 
