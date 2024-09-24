@@ -30,6 +30,8 @@ sed -i 's/OpenWrt/fang/g' package/base-files/files/bin/config_generate
 # Add additional packages
 #rm -rf feeds/packages/net/xray-core
 #rm -rf feeds/packages/net/sing-box
+git clone -b master --single-branch --depth=1 https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
+git clone -b master --single-branch --depth=1 https://github.com/kenzok8/small.git package/small
 git clone --depth=1 https://github.com/yunxi993/extra.git package/extra
 sed -i "s/enabled '0'/enabled '1'/g" feeds/packages/utils/irqbalance/files/irqbalance.config
 
