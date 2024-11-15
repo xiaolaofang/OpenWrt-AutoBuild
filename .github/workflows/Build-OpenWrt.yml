@@ -433,6 +433,10 @@ jobs:
         [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
         chmod +x $DIY_P1_SH
         cd openwrt
+        sed -i '38 a \
+        ifeq ($(PKG_VERSION),2.42) \
+          PKG_HASH:=f6e4d41fd5fc778b06b7891457b3620da5ecea1006c6a4a41ae998109f85a800 \
+        endif' toolchain/binutils/Makefile
         sed -i '1i src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
         sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
         $GITHUB_WORKSPACE/$DIY_P1_SH
