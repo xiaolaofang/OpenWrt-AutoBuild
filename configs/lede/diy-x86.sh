@@ -34,7 +34,7 @@ git clone --depth=1 https://github.com/Leo-Jo-My/luci-theme-opentomcat.git packa
 
 sed -i '38 a \
 ifeq ($(PKG_VERSION),2.42) \
-PKG_HASH:=f6e4d41fd5fc778b06b7891457b3620da5ecea1006c6a4a41ae998109f85a800 \
+  PKG_HASH:=f6e4d41fd5fc778b06b7891457b3620da5ecea1006c6a4a41ae998109f85a800 \
 endif' toolchain/binutils/Makefile
 
 # dockerd去版本验证
