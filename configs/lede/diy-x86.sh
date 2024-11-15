@@ -31,6 +31,7 @@ sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/theme
 
 # Add additional packages
 git clone --depth=1 https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/luci-theme-opentomcat
+sed -i 's|^KERNEL_PATCHVER:=6.6|KERNEL_PATCHVER:=6.1|' target/linux/x86/Makefile
 
 # dockerd去版本验证
 #sed -i 's/^\s*$[(]call\sEnsureVendoredVersion/#&/' feeds/packages/utils/dockerd/Makefile
