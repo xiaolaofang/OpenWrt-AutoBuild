@@ -24,7 +24,7 @@ sed -i 's/filter_aaaa	1/filter_aaaa	0/g' package/network/services/dnsmasq/files/
 #git clone --depth=1 https://github.com/yunxi993/extra.git package/extra
 #rm -rf feeds/packages/devel/gn
 #rm -rf feeds/packages/utils/tini
-rm -rf feeds/luci/protocols/luci-proto-ppp
+#rm -rf feeds/luci/protocols/luci-proto-ppp
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 
