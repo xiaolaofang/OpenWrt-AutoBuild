@@ -23,6 +23,7 @@ sed -i 's/192.168.1.1/192.168.1.2/g' package/base-files/files/bin/config_generat
 sed -i 's/filter_aaaa	1/filter_aaaa	0/g' package/network/services/dnsmasq/files/dhcp.conf
 #git clone --depth=1 https://github.com/yunxi993/extra.git package/extra
 #rm -rf feeds/packages/devel/gn
+rm -rf feeds/packages/utils/tini
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 
